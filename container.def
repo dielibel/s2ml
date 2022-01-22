@@ -1,9 +1,6 @@
 Bootstrap: library
 From: dppereyra/default/python:3.7.3-debian
 
-%files
-    src/
-
 %runscript
     echo "$*"
 
