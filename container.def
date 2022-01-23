@@ -1,32 +1,35 @@
-Bootstrap: library
-From: dppereyra/default/python:3.7.3-debian
+Bootstrap: docker
+From: ubuntu:18.04 
 
 %post
-    nvidia-smi
+    apt-get -y update && apt-get install -y git
+    apt-get update && apt-get install -y software-properties-common gcc
+    add-apt-repository -y ppa:deadsnakes/ppa
+    apt-get update && apt-get install -y python3.7 python3-distutils python3-pip python3-apt
 
-    git clone https://github.com/openai/CLIP                 &> /dev/null
-    git clone https://github.com/crowsonkb/guided-diffusion  &> /dev/null
-    pip install -e ./CLIP                                    &> /dev/null
-    pip install -e ./guided-diffusion                        &> /dev/null
+    git clone https://github.com/openai/CLIP
+    git clone https://github.com/crowsonkb/guided-diffusion
+    pip3 install -e ./CLIP
+    pip3 install -e ./guided-diffusion
 
-    git clone https://github.com/CompVis/taming-transformers &> /dev/null
-    pip install ftfy regex tqdm omegaconf pytorch-lightning  &> /dev/null
-    pip install kornia                                       &> /dev/null
-    pip install einops                                       &> /dev/null
-    pip install transformers                                 &> /dev/null
+    git clone https://github.com/CompVis/taming-transformers
+    pip3 install ftfy regex tqdm omegaconf pytorch-lightning
+    pip3 install kornia
+    pip3 install einops
+    pip3 install transformers
      
-    pip install stegano                                      &> /dev/null
-    apt install exempi                                       &> /dev/null
-    pip install python-xmp-toolkit                           &> /dev/null
-    pip install imgtag                                       &> /dev/null
-    pip install pillow==7.1.2                                &> /dev/null    
-    pip install taming-transformers                          &> /dev/null        
+    pip3 install stegano
+    apt install exempi
+    pip3 install python-xmp-toolkit
+    pip3 install imgtag
+    pip3 install pillow==7.1.2
+    pip3 install taming-transformers
                                 
-    git clone https://github.com/xinntao/ESRGAN &> /dev/null 
+    git clone https://github.com/xinntao/ESRGAN
 
-    pip install imageio-ffmpeg &> /dev/null
+    pip3 install imageio-ffmpeg
 
-    pip freeze > requirements.txt
+    pip3 freeze > requirements.txt
 
 %runscript
     echo "$*"
