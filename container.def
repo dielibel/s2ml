@@ -1,6 +1,33 @@
 Bootstrap: library
 From: dppereyra/default/python:3.7.3-debian
 
+%post
+    nvidia-smi
+
+    git clone https://github.com/openai/CLIP                 &> /dev/null
+    git clone https://github.com/crowsonkb/guided-diffusion  &> /dev/null
+    pip install -e ./CLIP                                    &> /dev/null
+    pip install -e ./guided-diffusion                        &> /dev/null
+
+    git clone https://github.com/CompVis/taming-transformers &> /dev/null
+    pip install ftfy regex tqdm omegaconf pytorch-lightning  &> /dev/null
+    pip install kornia                                       &> /dev/null
+    pip install einops                                       &> /dev/null
+    pip install transformers                                 &> /dev/null
+     
+    pip install stegano                                      &> /dev/null
+    apt install exempi                                       &> /dev/null
+    pip install python-xmp-toolkit                           &> /dev/null
+    pip install imgtag                                       &> /dev/null
+    pip install pillow==7.1.2                                &> /dev/null    
+    pip install taming-transformers                          &> /dev/null        
+                                
+    git clone https://github.com/xinntao/ESRGAN &> /dev/null 
+
+    pip install imageio-ffmpeg &> /dev/null
+
+    pip freeze > requirements.txt
+
 %runscript
     echo "$*"
 
