@@ -1,0 +1,7 @@
+FROM ubuntu:18.04
+
+RUN which python
+
+PULL requirements
+
+CMD echo which python
