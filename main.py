@@ -4,6 +4,7 @@
 
 # imports
 import argparse
+import sys
 
 # path
 sys.path.append('./taming-transformers')
