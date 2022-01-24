@@ -11,19 +11,16 @@ def vqgan_clip(args):
     initial_image = args.initial_image #@param {type:"string"}
     target_images = args.target_images #@param {type:"string"}
     max_iterations = args.max_iterations #@param {type:"number"}
-    print(8)
-    exit()
 
     input_images = ""
     #@markdown ### Advanced VQGAN+CLIP Parameters 
 
-    vq_init_weight = 0.0#@param {type:"number"}
-    vq_step_size = 0.1#@param {type:"number"}
-    vq_cutn = 64#@param {type:"number"}
-    vq_cutpow = 1.0#@param {type:"number"}
+    vq_init_weight = 0.0 #@param {type:"number"}
+    vq_step_size = 0.1 #@param {type:"number"}
+    vq_cutn = 64 #@param {type:"number"}
+    vq_cutpow = 1.0 #@param {type:"number"}
 
-    model_names={"vqgan_imagenet_f16_16384": 'ImageNet 16384',"vqgan_imagenet_f16_1024":"ImageNet 1024", 
-                     "wikiart_1024":"WikiArt 1024", "wikiart_16384":"WikiArt 16384", "coco":"COCO-Stuff", "faceshq":"FacesHQ", "sflckr":"S-FLCKR"}
+    model_names={"vqgan_imagenet_f16_16384": 'ImageNet 16384',"vqgan_imagenet_f16_1024":"ImageNet 1024", "wikiart_1024":"WikiArt 1024", "wikiart_16384":"WikiArt 16384", "coco":"COCO-Stuff", "faceshq":"FacesHQ", "sflckr":"S-FLCKR"}
     model_name = model_names[vqgan_model]     
 
     torch.cuda.empty_cache()
