@@ -4,8 +4,7 @@
 
 # imports
 import argparse
-from src import vqgan_clip
-
+from src import *
 
 # call stack
 def main():
