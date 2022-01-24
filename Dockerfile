@@ -14,7 +14,7 @@ RUN \
         https://github.com/dielibel/guided-diffusion \
         https://github.com/CompVis/taming-transformers \
         https://github.com/xinntao/ESRGAN && \
-    pip install -r requirements.txt && \
+    pip install -r requirements.txt \
 
 RUN \
     mkdir models vqgan-steps diffusion-steps && \
