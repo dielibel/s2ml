@@ -27,7 +27,7 @@ RUN \
     pip install imageio-ffmpeg
 
 RUN \
-    mkdir models vqgan-steps diffusion-steps && \
+    mkdir models diffusion-steps && \
     curl -L -o models/wikiart_16384.ckpt -C - 'http://eaidata.bmk.sh/data/Wikiart_16384/wikiart_f16_16384_8145600.ckpt' && \
     curl -L -o models/wikiart_16384.yaml -C - 'http://eaidata.bmk.sh/data/Wikiart_16384/wikiart_f16_16384_8145600.yaml'
 
