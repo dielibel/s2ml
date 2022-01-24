@@ -6,7 +6,7 @@ logs/
 .gitignore
 
 #Ignoring all the markdown and class files
+Dockerfile
 *.md
 **/*.*.swp
 **/__pycache__
-jobs.txt
