@@ -3,8 +3,15 @@
 # by: Noah Syrkis
 
 # imports
-import argparse
-from src import *
+from src.helpers import *
+from src.imports import *
+
+
+# path
+sys.path.append('./taming-transformers')
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+sys.path.append('./CLIP')
+sys.path.append('./guided-diffusion')
 
 # call stack
 def main():
