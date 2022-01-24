@@ -3,8 +3,8 @@
 # by: Noah Syrkis
 
 # imports
-from src.helpers import *
-from src.imports import *
+from helpers import *
+from imports import *
 
 
 # path
