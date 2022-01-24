@@ -5,6 +5,7 @@
 # imports
 import argparse
 import sys
+from vqgan_clip import vqgan_clip
 
 # path
 sys.path.append('./taming-transformers')
