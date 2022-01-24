@@ -10,10 +10,10 @@ RUN \
     apt update && apt install -y exempi && \
     python -m pip install --upgrade pip && \
     git submodule add \
-        https://github.com/openai/CLIP \
-        https://github.com/dielibel/guided-diffusion \
-        https://github.com/CompVis/taming-transformers \
-        https://github.com/xinntao/ESRGAN && \
+        https://github.com/openai/CLIP.git \
+        https://github.com/dielibel/guided-diffusion.git \
+        https://github.com/CompVis/taming-transformers.git \
+        https://github.com/xinntao/ESRGAN.git && \
     pip install -r requirements.txt \
 
 RUN \
