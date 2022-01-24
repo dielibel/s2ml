@@ -15,4 +15,4 @@ RUN \
 
 COPY src/ main.py ./
 
-CMD python main.py
+CMD ls
