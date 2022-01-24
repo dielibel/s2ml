@@ -8,7 +8,7 @@ COPY . .
 
 RUN \
     apt update && apt install -y exempi && \
-    pip install -r requirements.txt \
+    pip install -r requirements.txt
 
 RUN \
     mkdir models vqgan-steps diffusion-steps && \
