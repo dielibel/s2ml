@@ -5,6 +5,7 @@ import io
 import sys
  
 sys.path.append('./taming-transformers')
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 from IPython import display
 from base64 import b64encode
 from omegaconf import OmegaConf

@@ -8,7 +8,6 @@ import sys
 
 # path
 sys.path.append('./taming-transformers')
-ImageFile.LOAD_TRUNCATED_IMAGES = True
 sys.path.append('./CLIP')
 sys.path.append('./guided-diffusion')
 
