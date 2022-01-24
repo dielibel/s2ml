@@ -9,6 +9,7 @@ COPY . .
 RUN \
     git clone https://github.com/openai/CLIP && \
     git clone https://github.com/dielibel/guided-diffusion && \
+    python -m pip install --upgrade pip
     pip install -e ./CLIP && \
     pip install -e ./guided-diffusion && \
     git clone https://github.com/CompVis/taming-transformers && \
