@@ -3,9 +3,7 @@
 # by: Noah Syrkis
 
 # imports
-from helpers import *
-from imports import *
-
+import argparse
 
 # path
 sys.path.append('./taming-transformers')

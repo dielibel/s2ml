@@ -1,5 +1,7 @@
 def vqgan_clip(args):
-
+    from helpers import *
+    from imports import *
+        
     usingDiffusion = False;
 
     prompts = args.prompts #@param {type:"string"}
