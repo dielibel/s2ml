@@ -8,5 +8,4 @@ logs/
 #Ignoring all the markdown and class files
 *.md
 **/*.*.swp
-Dockerfile
 **/__pycache__
