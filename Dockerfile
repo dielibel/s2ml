@@ -29,5 +29,3 @@ RUN \
 ENTRYPOINT ["python", "main.py"]
 
 CMD ["no_config_specified"]
-
-
