@@ -26,4 +26,8 @@ RUN \
     git clone https://github.com/xinntao/ESRGAN && \
     pip install imageio-ffmpeg
 
-CMD python main.py
+ENTRYPOINT ["python", "main.py"]
+
+CMD ["no_config_specified"]
+
+

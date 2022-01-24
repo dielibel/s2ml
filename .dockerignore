@@ -9,3 +9,4 @@ logs/
 *.md
 **/*.*.swp
 **/__pycache__
+jobs.txt
