@@ -18,7 +18,7 @@ RUN \
     pip install einops && \
     pip install transformers && \
     pip install stegano && \
-    apt install exempi && \
+    apt update && apt install exempi && \
     pip install python-xmp-toolkit && \
     pip install imgtag && \
     pip install pillow==7.1.2 && \
