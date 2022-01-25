@@ -12,5 +12,6 @@ imgtag
 pillow==7.1.2
 taming-transformers
 imageio-ffmpeg
+imageio
 git+https://github.com/openai/CLIP.git
 git+https://github.com/dielibel/guided-diffusion.git
