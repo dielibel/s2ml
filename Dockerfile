@@ -14,4 +14,4 @@ RUN pip install -r requirements.txt
 
 COPY script.py ./
 
-CMD python --version
+CMD python script.py
