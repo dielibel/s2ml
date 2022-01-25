@@ -2,7 +2,7 @@ FROM python:3.7
 
 WORKDIR /usr/src/app
 
-COPY models.sh
+COPY models.sh ./
 
 RUN apt update && apt install -y exempi && \
     mkdir models vqgan-steps diffusion-steps && \
