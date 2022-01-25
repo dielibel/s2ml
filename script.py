@@ -31,10 +31,10 @@ import json
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 sys.path.append('./CLIP')
-sys.path.append('./guided-diffusion')
+# sys.path.append('./guided-diffusion')
 
 import clip
-from guided_diffusion.script_util import create_model_and_diffusion, model_and_diffusion_defaults
+# from guided_diffusion.script_util import create_model_and_diffusion, model_and_diffusion_defaults
 
 def sinc(x):
     return torch.where(x != 0, torch.sin(math.pi * x) / (math.pi * x), x.new_ones([]))
