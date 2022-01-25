@@ -18,7 +18,7 @@ from torchvision import transforms
 from torchvision.transforms import functional as TF
 from tqdm import tqdm
  
-from CLIP import clip
+import clip
 import kornia.augmentation as K
 import numpy as np
 import imageio
